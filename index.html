@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney+</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="script.js" type="text/javascript"></script>
+</head>
+
+<body >
+    <div class="header-nav-container-outer">
+      <!-------Header section------->
+      <header>
+        <div class="header-wrapper">
+
+          <img class="logo" src="media/disney-logo.png"  alt="disney plus logo">
+          <div id="header-btn-container">
+            <a href="#" class="header-btn cta-btn">WEBで視聴</a>
+            <a href="#" class="header-btn cta-btn">新規入会</a>
+          </div>
+        </div>
+      </header>
+      <div class="header-nav-container-inner">
+        <!-------Navigation section------->
+        <nav>
+          <ul>
+            <li class="nav-li first-li"><a href="#" class="nav-li-a">Disney+とは</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">入会方法</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">今月のおすすめ</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">作品一覧</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">オリジナル作品</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">NEWS</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">会員の方</a></li>
+            <li class="nav-li"><a href="#" class="nav-li-a">ヘルプセンター</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-------banner section with disney characters collage------->
+    <section class="banner-section">
+      <picture>
+        <source media="(max-width: 800px)" srcset="media/hero-banner-small.jpg">
+        <img src="media/hero-banner.jpg">
+      </picture>
+    </section>
+
+    <!-------call to action (CTA) section ------->
+    <div class="top-cta-section-container">
+      <section class="top-cta-section">
+        <h1>ディズニーな毎日をプラスしよう。</h1>
+        <h5>ディズニー公式動画配信サービス Disney+（ディズニープラス）。</h5>
+        <a href="#" class="cta-btn">WEBで視聴する</a>
+        <a href="#" class="cta-btn">初めてなら初月無料でお試し</a>
+        <h3>月額770円（税込）ですべての作品が見放題</h3>
+        <p>ご入会いただくのは「ディズニープラス」と「ディズニーDX」アプリを楽しめるサービスです。</p>
+        <p id="learn-more-link"><a  href="#"><span class="learn-more-icon">></span>ディズニーデラックスからの移行について</a></p>
+      </section>
+    </div>
+
+    <!-------section showcasing top disney movies and characters------->
+    <div class="chess-box-container">  
+      <section class="summer-campaign chess-box-left">
+        <img class="chess-box-img" src="media/summer-campaign.jpg" alt="disney movies heroes collage">
+        <div class="chess-box-text">
+          <h3>ディズニープラス サマーキャンペーン</h3>
+          <p>夏におすすめの作品を大特集！すべての物語に、それぞれのハッピーエンドがある。あなただけのハッピーエンドの物語を見つけよう。</p>
+          <p class="more-btn"><a href="#">もっと見る</a><span>></span></p>
+        </div>
+      </section>
+      <section class="jungle-cruise chess-box-right">
+        <img class="chess-box-img" src="media/jungle-cruise.jpg" alt="disney movies heroes collage">
+        <div class="chess-box-text">
+          <h3>ジャングル・クルーズ</h3>
+          <p>映画館 ＆ ディズニープラス プレミア アクセスにて同時公開中！</p>
+          <p>プレミア アクセスは追加支払いが必要です。</p>
+          <p class="more-btn"><a href="#" >もっと見る</a><span>></span></p>
+        </div>
+      </section>
+      <section class="monster-at-work chess-box-left">
+        <img class="chess-box-img" src="media/monsters-at-work.jpg" alt="disney movies heroes collage">
+        <div class="chess-box-text">
+          <h3>モンスターズ・ワーク</h3>
+          <p>映画『モンスターズ・インク』のその後を描くアニメーションシリーズ。ディズニープラスで独占配信中！</p>
+          <p class="more-btn"><a href="#" >もっと見る</a><span>></span></p>
+        </div>
+      </section>
+    </div>
+
+    <!-------this section doesnt exist on Official Dinsey+ LP. I added to show my most favorite studios------->
+    <section class="fav-studio-section">
+      <h3>My Favotite Studios</h3>
+      <div class="fav-studio-container">
+        <div class="fav-studio-box">
+          <div class="fav-studio-img pixar" >
+              <audio id="pixar" preload="auto">
+                <source src="media/PIXAR opening theme.mp3">
+              </audio>
+            </div>
+            <p>at the penguin disco had flamingo backup dancers doing the Macarena, but when the pizza delivery sloth finally arrived, everyone realized the party was in slow-mo-motion, creating a pizza-tastic, feather-ruffling spectacle!.</p>
+          </div>
+          <div class="fav-studio-box">
+            <div class="fav-studio-img marvel">
+              <audio id="marvel" preload="auto">
+                <source src="media/Marvel Opening Theme.mp3">
+              </audio>
+              <img class="brand-logo" href="">
+              <img class="brand-gif" href="">          
+            </div>
+            <p>Lorem ipsum Disney is a global entertainment conglomerate known for its animated classics, theme parks, and acquisition of major franchises, including Star Wars and Marvel, making it a dominant force in the entertainment industry.</p>
+          </div>
+          <div class="fav-studio-box">
+            <div class=" disney fav-studio-img">
+              <audio id="disneyIntro" preload="auto">
+                <source src="media/Disney Intro.mp3">
+              </audio>
+              <img class="brand-logo" href="">
+              <img class="brand-gif" href="">          
+            </div>
+            <p>Lorem ipsum Marvel is a renowned comic book and entertainment company, famous for creating iconic superheroes like Spider-Man, Iron Man, and the Avengers, as well as producing blockbuster films and TV series within the Marvel Cinematic Universe..</p>
+          </div>
+        </div>
+    </section>
+    <section class="socials">
+      <h3>Let's socialize!</h3>
+      <p><a target="_blank" href="https://github.com/zinelabidiin" target="blank"></a>Github profile</a></p>
+      <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/oybek-anapiyaev/">Linkedin</a>
+    </section>
+</body>
+</html>

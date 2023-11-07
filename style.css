@@ -1,0 +1,312 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  /*border: 1px solid red;*/
+}
+/*global*/
+:root{
+  --blue:#016cfa;
+  --black:#060606;
+  --gray:#1a1c29;
+  --white: #eee;
+  --looseblue: #02e7f5;
+}
+/*use :not to apply css to all element except specific if or style*/
+a:not(.more-btn){
+  text-decoration: none;
+  color:var(--white);
+}
+.more-btn a:hover{
+  text-decoration: underline;
+}
+#learn-more-link a:hover{
+  text-decoration: underline;
+}
+
+ul{
+  /*had to remove left padding manually otherwise invisible paddiding was applied*/
+  padding-left:0;
+}
+li{
+  list-style-type: none;
+}
+
+p{
+  font-size:0.8rem;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1rem;
+  /*overflow-y: hidden;*/
+  max-width: 1280px;
+  margin:auto;
+  color: var(--white);
+  font-family: Noto Sans,Helvetica Neue,Arial,sans-serif!important;
+  background-color: var(--gray);
+  line-height:1.6;
+}
+
+/*header-nav-container*/
+.header-nav-container-outer{
+  position: fixed;
+  background-color:/*green*/var(--gray); 
+  top:0;
+  right:0;
+  left:0;
+  z-index: 10;
+  width: 100%;
+}
+.header-nav-container-inner{
+  max-width:1280px;
+  margin:auto;
+  top:0;
+  width:100%;
+}
+
+/*header*/
+header{
+  max-height: 118px; 
+  background-color:var(--black);
+  padding: 10px 5px;
+}
+.header-wrapper{
+  max-width: 1280px;
+  width:100%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  max-width: 100px;
+}
+.cta-btn{
+  font-weight: 600;
+  background-color:var(--blue);
+  padding: 10px;
+  margin-left:5px; 
+  border-radius:5px;
+}
+
+/*nav*/
+nav ul{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  height:48px;
+  font-weight:600;
+  /*create a scroll bar for content that overflows the borders*/
+  overflow: auto;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.nav-li a:hover{
+  padding-bottom:10px;
+  border-bottom: 5px solid var(--white);
+}
+/*give a left padding except to the first li child/element*/
+.nav-li:not(:first-child){
+  padding-left: 50px;
+}
+
+/*custom scrollbar track and thumb*/
+::-webkit-scrollbar{
+  width:5px;
+  height:5px;
+}
+::-webkit-scrollbar-track{
+  background:none;
+}
+::-webkit-scrollbar-thumb{
+  background:gray;
+}
+
+/*banner-section*/
+.banner-section{
+  margin-top:102px;
+}
+.banner-section img{
+  width:100%;   
+}
+
+/*top-cta-section*/
+.top-cta-section-container{
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+.top-cta-section{
+  display:flex;
+  flex-direction: column;
+  max-width:540px;
+  align-items: space-around;  
+  justify-content: space-evenly;
+  text-align:center;
+  margin: 15px auto 50px auto;
+}
+.top-cta-section h5{
+  margin: 20px 0;
+}
+.top-cta-section .cta-btn{
+  margin:10px 0;
+}
+
+#learn-more-link a{
+  color: var(--looseblue);
+}
+#learn-more-link span{
+  background-color: var(--looseblue);
+  color:var(--white);
+  border-radius:50px;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:20px;
+  height:20px;
+  font-size:15px;
+  margin-right:5px;
+}
+
+/*chess-box-container*/
+.chess-box-container{
+  padding: 0 15px;
+}
+
+/*summer-campaign*/
+.chess-box-left{
+  display: flex;
+  flex-direction:row; 
+  margin-bottom:40px;
+}
+.chess-box-right{
+  display: flex;
+  flex-direction:row-reverse;
+  margin-bottom:40px;
+}
+.chess-box-img{
+  width:auto;
+  max-width:50%;
+  height:auto;
+}
+.chess-box-text{
+  max-width: 50%;
+  display: flex;
+  padding:0 70px;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.chess-box-text h3{
+  padding-bottom:40px;
+  font-weight:500;
+  font-size:1.6rem;
+}
+.more-btn{
+  padding-top:20px;
+  text-align:end;
+}
+
+/*fav-studio-section*/
+.fav-studio-section{
+  margin:80px auto 80px auto;
+}
+.fav-studio-section h3{
+  text-align:center;
+  font-size:2rem;
+}
+
+.fav-studio-container{
+  display: flex;
+  justify-content:space-around;
+}
+.fav-studio-box{
+  flex-basis:25%;
+}
+.fav-studio-img{
+  width:100%;
+  height:150px;  
+  margin-top:30px;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius:20px;
+  margin-bottom:20px;
+  transition: transform 0.5s;
+  border:5px solid #4d5279;
+  background-color: #353a5e;
+}
+.pixar{
+  background-image: url(media/pixar_brand.png);
+}
+.pixar:hover{
+  background-image: url(media/pixar_brand.png), url(media/pixar.gif);
+  transform:scale(1.05);
+  border:5px solid var(--white);
+}
+.marvel{
+  background-image: url(media/marvel_brand.png);
+}
+.marvel:hover{
+  background-image: url(media/marvel_brand.png), url(media/marvel.gif);
+  transform:scale(1.05);
+  border:5px solid var(--white);
+}
+.disney{
+  background-image: url(media/disney_brand.png);
+}
+.disney:hover{
+  background-image: url(media/disney_brand.png), url(media/disney.gif);
+  transform:scale(1.05);
+  border:5px solid var(--white);
+} 
+.socials{
+  text-align:center;
+}
+/*tablets and smartphones*/
+@media only screen and (max-width:800px){
+  .chess-box-right, .chess-box-left{
+    flex-direction:column;
+    align-items:center;
+    max-width:800px;
+  }
+  /*img and text weren't strteching because they only had 50% of the width*/
+  .chess-box-img, .chess-box-text{
+    max-width:100%;
+    text-align: center;
+    padding:0;
+  }
+  .fav-studio-container{
+    flex-direction:column;
+  }
+  .fav-studio-box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .fav-studio-img{
+    max-width:50%;
+  }
+  .fav-studio-box p{
+    padding:0 1rem;
+    text-align:center;
+  }
+}
+
+/*smartphones with a small screen*/
+@media only screen and (max-width:480px){
+  h1{
+    font-size:5vw;
+  }
+  h5{
+    font-size:3vw;
+  }
+  h3{
+    font-weight:normal;
+  }
+}
